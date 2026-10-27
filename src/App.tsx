@@ -6,6 +6,8 @@ import { DashboardPage } from './pages/DashboardPage'
 import { LoginPage } from './pages/LoginPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { RegisterPage } from './pages/RegisterPage'
+import { WantedDetailPage } from './pages/WantedDetailPage'
+import { WantedListPage } from './pages/WantedListPage'
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
           <Route element={<RequireAuth />}>
             <Route element={<Layout />}>
               <Route path="/" element={<DashboardPage />} />
+              <Route path="/wanted" element={<WantedListPage />} />
+              <Route path="/wanted/:id" element={<WantedDetailPage />} />
             </Route>
           </Route>
 

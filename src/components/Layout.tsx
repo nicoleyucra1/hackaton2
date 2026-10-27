@@ -19,6 +19,9 @@ export function Layout() {
             <NavLink to="/" end className={({ isActive }) => (isActive ? 'text-amber-300' : 'text-slate-300')}>
               Dashboard
             </NavLink>
+            <NavLink to="/wanted" className={({ isActive }) => (isActive ? 'text-amber-300' : 'text-slate-300')}>
+              Se Busca
+            </NavLink>
           </nav>
           <div className="ml-auto flex items-center gap-3 text-sm">
             <span className="text-slate-400">
